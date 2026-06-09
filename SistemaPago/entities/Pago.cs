@@ -23,7 +23,7 @@ public abstract class Pago
 
     public void MostrarDetalles()
     {
-       Console.WriteLine($"Titular: {Titular}");
+        Console.WriteLine($"Titular: {Titular}");
         Console.WriteLine($"Monto original: ${MontoOriginal}");
         Console.WriteLine($"Fecha: {Fecha.ToShortDateString()}");
         Console.WriteLine("Procesando pago...");
