@@ -8,8 +8,18 @@ public class Efectivo : Pago
 
     public string divisa { get => Divisa; set => Divisa = value; }
 
-    public override decimal ProcesarPago()
+    public override double ProcesarPago()
     {
-        return montoOriginal;
+        return ObtenerMontoFinal(montoOriginal, CalcularComision());
+    }
+
+    public override double CalcularComision()
+    {
+        return 0;
+    }
+
+    public override double ObtenerMontoFinal(double montoOriginal, double comision)
+    {
+        return montoOriginal + comision;
     }
 }
