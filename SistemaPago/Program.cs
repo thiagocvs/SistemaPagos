@@ -4,7 +4,7 @@ class Program
     static void Main(string[] args)
     {
         List<Pago> pagos = new List<Pago>();
-        int opcin;
+        int opcion;
 
         do
         {
@@ -28,7 +28,7 @@ class Program
                     Console.WriteLine("Opcion no valida, intente nuevamente.");
                     break;
             }
-        }while (opcin != 3);
+        }while (opcion != 3);
 
         void pagoEfectivo()
         {
