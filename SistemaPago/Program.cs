@@ -14,7 +14,7 @@ class Program
             Opcion 2: Pago con Tarjeta");
             opcion = int.Parse(Console.ReadLine());
 
-            switch (opcin)
+            switch (opcion)
             {
                 case 1:
                     pagoEfectivo();
